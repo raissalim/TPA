@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class dezpessoas {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner (System.in);
+		int p=1;
+		double idade;
+		
+		while (p<=10) {
+			System.out.println("Digite a idade da "+p+"°");
+			idade = in.nextDouble();
+			if (idade<=18) {
+				System.out.println("Menor de idade");
+			}else {
+				System.out.println("Maior de idade");
+			}
+			p=p+1;
+		}
+		in.close();
+}
+}
