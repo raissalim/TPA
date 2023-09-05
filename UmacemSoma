@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class umacemsoma {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner (System.in);
+		int i=100,n=1,c;
+		double t;
+
+		while (i>=1 & n<=99) {
+			c = n+i;
+			System.out.println(n+"+"+i+"="+c);
+			i=i-1;
+			n=n+1;
+		}
+		t=101*50;
+		System.out.println("Total:"+t);
+		in.close();
+}
+}
