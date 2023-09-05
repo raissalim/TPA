@@ -1,0 +1,19 @@
+vimport java.util.Scanner;
+public class Joooepedro {
+	public static void main(String[]Args) {
+		Scanner in=new Scanner(System.in);
+		Double J=1.34, P=1.45;
+		int Anos=0;
+		
+		while (J<P) {
+			Anos=Anos+1;
+			J=J+0.025;
+			P=P+0.020;
+		}		
+		System.out.println("A altura do Joao:"+J);
+		System.out.println("A altura de Pedro:"+P);
+		System.out.println("Demorou: "+Anos+"anos");
+		
+		in.close();
+}
+}
