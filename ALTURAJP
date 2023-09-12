@@ -1,0 +1,16 @@
+
+public class JoaoPedro {
+	public static void main(String[] arges) {
+		double PedroAl = 1.45, JoaoAl = 1.34;
+		int Ano=0;
+		
+		while (JoaoAl<PedroAl) {
+			JoaoAl = JoaoAl + 0.025;
+			PedroAl = PedroAl + 0.020;
+			Ano = Ano + 1;
+		}
+		
+		System.out.println("João vai ter: "+JoaoAl+" em "+Ano+ " Anos, enquanto Pedro vai ter: "+PedroAl);
+
+}
+}
