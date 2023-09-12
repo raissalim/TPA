@@ -1,0 +1,22 @@
+                                                                                                                                                                                                                      
+import java.util.Scanner;
+public class Fatorial {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner(System.in);
+		int N,f, Resultado;
+		
+		System.out.println("Digite um numero para fazer o fatorial:");
+		N = in.nextInt();
+		f = N-1;
+		Resultado = N;
+		
+		System.out.print(N+"! = "+N);
+		while (f>=1) {
+			System.out.print("x"+f);
+			Resultado*=f;
+			f=f-1;
+		}
+		System.out.print("= "+Resultado);
+		in.close();
+	}
+}
