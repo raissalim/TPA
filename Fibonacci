@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+public class Fibonacci {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner(System.in);
+		int Nant=0, Npro=1, Ntermos, Natual= 1,Contador=1;
+		
+		System.out.println("Escolha o numero de termos: ");
+		Ntermos = in.nextInt();
+		
+		System.out.print(Nant);
+		while (Contador<=Ntermos) {
+			System.out.print(","+Natual+","+Npro);
+			Nant=Nant+Natual;
+			Natual= Natual+Npro;
+			Npro=Nant+Natual;
+			Contador=Contador+2; // Dois termos por sysout
+			
+		}
+		in.close();
+
+}
+}
