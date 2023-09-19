@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class maiormenoridade {
+public static void main(String[] args) {
+	Scanner in=new Scanner(System.in);
+	final int anotual=2023;
+	  int nascusu,id;
+	  double resposta;
+	  do {
+	  System.out.println("Digite sua data de nascimento");
+	  nascusu=in.nextInt();
+	  id = anotual - nascusu;
+	  System.out.println("A idade é: "+id+"anos");
+		  if (id<18) {
+			  System.out.println("O usuário é menor de idade");
+		  }else {
+			  System.out.println("O usuário é maior de idade");
+		  }
+	  System.out.println("Deseja continuar? (1-para sim e 2-para não)");
+	  resposta = in.nextDouble();
+	  }while(resposta!=2);
+	  
+	  System.out.println("O programa acabou");
+	  in.close();
+}
+		
+}
+
