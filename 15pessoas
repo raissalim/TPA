@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class pessoas {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        double fa15 = 0, fa1618 = 0, fa1922 = 0, fa23 = 0;
+        double po15=0,po1618=0,po1922=0,po23=0;
+        int totalAlunos=15;
+        for (int i = 0; i < totalAlunos; i++) {
+            System.out.print("Digite a idade do aluno " + (i + 1) + ": ");
+            int idade = input.nextInt();
+            if (idade <= 15) {
+                fa15++;
+            } else if (idade <= 18) {
+                fa1618++;
+            } else if (idade <= 22) {
+                fa1922++;
+            } else {
+                fa23++;
+            }
+        }
+        System.out.println("Quantidade de Alunos por Faixa Etária:");
+        System.out.println("Até 15 anos: " + fa15);
+        System.out.println("De 16 a 18 anos: " + fa1618);
+
+        System.out.println("De 19 a 22 anos: " + fa1922);
+        System.out.println("A partir de 23 anos: " + fa23);
+        // porcentagem
+         po15 = fa15 / totalAlunos*100;
+         po1618 = fa1618 / totalAlunos*100;
+         po1922 =  fa1922 / totalAlunos*100;
+         po23 = fa23 / totalAlunos*100;
+        System.out.println("Porcentagem de Alunos por Faixa Etária:");
+        System.out.println("Porcentagem de até 15 anos: " + po15 + "%");
+        System.out.println("Porcentagem de 16 a 18 anos: " + po1618 + "%");
+        System.out.println("Porcentagem de 19 a 22 anos: " + po1922 + "%");
+        System.out.println("Porcentagem de a partir de 23 anos: " + po23 + "%");
+        input.close();
+    }
+}
