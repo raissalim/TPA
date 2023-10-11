@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class médiaNumeros {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner (System.in);
+	    double i,n=0,soma=0,ma;
+	    for(i=13;i<=73;i++){
+		soma+=i;
+	        n++;
+	  ma=(soma)/2;
+	System.out.println("A média aritmetica é"+ma);
+	    }
+		in.close();
+	
+}
+}
