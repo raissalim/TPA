@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class primos {
+    public static void main(String[]args){
+        Scanner in=new Scanner(System.in);
+        int n,i;
+        System.out.println("Digite um numero inteiro!");
+        n=in.nextInt();
+        for(i=3;i<=n;i++){
+        if (n%1==0){
+            System.out.println("numero primo");}
+            else{
+            System.out.println("não é numero primo!");
+        }
+            in.close();
+        }
+        
+    }
+    }
