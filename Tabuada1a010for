@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class tabuada1aodez {
+	public static void main(String[] arges) {
+		Scanner in = new Scanner (System.in);
+		double num,resul;
+	    int i;
+		System.out.println("Digite um número");
+		num = in.nextDouble();
+	    System.out.println("Sequencia da tabuada");
+	    for (i=1;i<=10;i++){
+	        resul = num*i;
+			System.out.println(num+"x"+i+"="+resul);
+	    }
+			in.close();
+	    }
+	    
+	}
+
+
