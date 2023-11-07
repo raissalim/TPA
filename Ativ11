@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Ativ11 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+			final int TAM = 10;
+			int a[], x;
+			a = new int [TAM];
+			
+			//Entrada de dados
+			System.out.println("Vector A");
+			for (int i=0; i<TAM; i++) {
+				a[i] = ler.nextInt();
+			}
+			 System.out.println("Escreva um numero para pesquisar");
+			 x = ler.nextInt();
+			 
+			 //Pesquisa
+			 for (int i = 0 ; i<TAM ; i++) {
+				 if (x == a[i]) {
+					 System.out.println("Dado encontrado, na"+i+" linha");
+				 }
+			 }
+			 ler.close();
+}
+}
