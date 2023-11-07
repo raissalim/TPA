@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Ativ9 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int a[], b[], i,C,D;
+		final int TAM = 10;
+			a = new int[TAM];
+			b = new int[TAM];
+
+		System.out.println("Digite os numeros do vetor A");
+		for (i = 0; i < TAM; i++) {
+			a[i] = ler.nextInt();
+		}
+
+		System.out.println("Digite os numeros do vetor B[]");
+		for (i = 0; i < TAM; i++) {
+			b[i] = ler.nextInt();
+		}
+		i = 0;
+		for (C = 0;C<TAM;C++) {
+			for (D = 0; D<TAM;D++) {
+				if (a[C] == b[D]) {
+					a[i] = a[C];
+					i++;
+					break;
+				}
+			}
+		}
+		int c[] = new int[i];
+		
+		
+		for (C=i-1;C>=0;C--) {
+			c[C] = a[C];
+		}
+		
+		System.out.print("C = [");
+		for (C= 0; C<TAM- 1;C++) {
+			System.out.print(c[C] + " ");
+		}
+		System.out.println(c[TAM-1] + "]");
+		ler.close();
+}
+}
