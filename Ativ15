@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Ativ15 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+			final int TAM = 11;
+			int a[],i,C,D;
+			a = new int [TAM];
+			
+			System.out.println("Escreva 10 elementos");
+			for (i=1; i<TAM; i++) {
+				a[i] = ler.nextInt();
+			}
+			C = a[9]+1;
+			D = a[0];
+			
+			System.out.print("Crescente = ");
+			for (i=1; i<TAM; i++) {
+				if (a[i]<C) {
+					System.out.print(a[i]+" ");
+				}
+					
+			}
+			
+			System.out.print("Decrescente = ");
+			for (i=10; i>0; i--) {
+				if (a[i]>D) {
+					System.out.print(a[i]+" ");
+				}
+					
+			}
+			ler.close();
+}
+}
