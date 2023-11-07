@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class vetor5 {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int a[];
+        final int TAM=11;
+        a=new int[TAM];
+        // Preencher vetor a com números de 0 a 9
+        for (int i = 0; i <TAM; i++) {
+            System.out.println("Digite um numero inteiro");
+            int n=in.nextInt();
+            a[i] = n;
+            System.out.print("\n");
+        }
+        // Imprimir cada elemento do vetor a em relação aos pares de 0 ao respectivo número
+        for (int i = 0; i < TAM; i++) {
+            System.out.print(a[i] + ": ");
+            // Imprimir pares de 0 até o número atual
+            for (int r = 0; r <= a[i]; r += 2) {
+                System.out.print(r + " ");
+            }
+            System.out.print("\n");
+            System.out.print("\n");
+            in.close();
+          //  System.out.println();
+        }
+    }
+}
