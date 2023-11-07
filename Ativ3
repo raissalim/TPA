@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ativ3 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		int a[],i,par;
+		final int TAM = 10;
+		a = new int [TAM];
+		for (i=0;i<TAM;i++) {
+			System.out.println("Digite numero inteiro!");
+			a[i] = in.nextInt();
+			System.out.print("A seguir os  pares relacionados aos respectivos numeros  "+a[i]+" sao os : ");
+			for(par=0;par<a[i];par=par+2) {
+				System.out.print(p+" ");
+			}
+	    	}
+    
+    	}
+     }
