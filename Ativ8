@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ativ8 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+			final int TAM = 11;
+			int a[], b[];
+			int j = 0, i;
+			a = new int [TAM];
+			b = new int [TAM];
+			
+			
+			System.out.println("Vector A");
+			for (i=0; i<TAM; i++) {
+				System.out.println("Apresente o "+(i+1)+" numero");
+				a[i] = ler.nextInt();
+			}
+			
+			for (i=0; i<TAM; i++) {
+				b [i] = a[i]+j;
+				j = b[i];
+
+		}
+			System.out.println("Somatória é: "+b[11]);
+			ler.close();
+}
+}
