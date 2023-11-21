@@ -2,11 +2,11 @@ import java.util.Scanner;
 public class Ativ9 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int a[], b[], i,C,D;
+		int a[], b[],c [], i;
 		final int TAM = 10;
 			a = new int[TAM];
 			b = new int[TAM];
-
+			c = new int [TAM];
 		System.out.println("Digite os numeros do vetor A");
 		for (i = 0; i < TAM; i++) {
 			a[i] = ler.nextInt();
@@ -15,29 +15,17 @@ public class Ativ9 {
 		System.out.println("Digite os numeros do vetor B[]");
 		for (i = 0; i < TAM; i++) {
 			b[i] = ler.nextInt();
-		}
-		i = 0;
-		for (C = 0;C<TAM;C++) {
-			for (D = 0; D<TAM;D++) {
-				if (a[C] == b[D]) {
-					a[i] = a[C];
-					i++;
-					break;
-				}
+			if (a[i] == b[i]) { // Vereficando se o numero de A é igual a B
+				c[i] = a[i]; // Adicionanado a interssecção
 			}
 		}
-		int c[] = new int[i];
 		
-		
-		for (C=i-1;C>=0;C--) {
-			c[C] = a[C];
-		}
 		
 		System.out.print("C = [");
-		for (C= 0; C<TAM- 1;C++) {
-			System.out.print(c[C] + " ");
+		for (i= 0; i<TAM;i++) {
+			System.out.print(" "+c[i] );
 		}
-		System.out.println(c[TAM-1] + "]");
+		System.out.println("]");
 		ler.close();
 }
 }
