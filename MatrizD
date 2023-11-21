@@ -1,0 +1,50 @@
+import java.util.Random;
+import java.util.Scanner;
+public class AtivD {
+
+	public static void main(String[] args) {
+		//Atribuir variaveis
+		int acertos = 0,rodadas = 0;
+		int cartela [] [] = new int [4] [4];
+		int respostas [] [] = new int [4] [4];
+		Random ler = new Random();
+		Scanner in = new Scanner(System.in);
+		
+		//Atribuir os valores da cartela
+		for (int i = 0; i < cartela.length; i++) {
+			for (int j = 0; j < cartela.length; j++) {
+				cartela [i] [j] = ler.nextInt((75-1)+1);
+			}
+		}
+		
+		//O usuário digita sua resposta
+		System.out.println("Escreva sua cartela");
+		for (int i = 0; i < cartela.length; i++) {
+			for (int j = 0; j < cartela.length; j++) {
+				respostas [i] [j] = in.nextInt();
+				if (respostas [i] [j] == cartela [i] [j]) {
+					acertos++;
+				}
+				rodadas++;
+			}
+		}
+		
+		//Verificar se foi Bingo
+		if(acertos == 16) {
+			System.out.println("Bingo!");
+		}else {
+			System.out.println("Não foi bingo :(");
+		}
+		 System.out.println("O seu numero de acertos foi: "+acertos+" no total de "+rodadas+" rodadas");
+		 
+		 //Mostrar a cartela
+		 System.out.println("Numeros sorteados");
+		 for (int i = 0; i < respostas.length; i++) {
+			for (int j = 0; j < respostas.length; j++) {
+				System.out.println(cartela [i] [j]);
+			}
+		}
+		in.close();
+	}
+
+}
