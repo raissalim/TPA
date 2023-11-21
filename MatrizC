@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class MatrizC {
+    public static void main(String[] args) {
+        int[][] ma = new int[3][4];
+        Scanner in = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {// aqui vamos alocar os valores da linha e colunas 
+            for (int j = 0; j < 3; j++) {
+                System.out.print("Digite o valor para a posição [" + i + "][" + j + "]: ");// um jeito no modelo(i+1) para ajudar a exclarecer
+                ma[i][j] = in.nextInt();// lendo o valor da matriz 
+                 }
+              }
+        System.out.print("Digite um número para somar às linhas: ");// vamos pedir para o usuario um valor para atribuir as linhas 
+        int num = in.nextInt();// lendo 
+        // finalizando temos aqui a soma
+        for (int i = 0; i < 3; i++) {
+            ma[i][3] = ma[i][0] + ma[i][1] + ma[i][2] + num; // sao 4 linhas sendo do 0 ao 3 pois o java e uma linguahem de base 0, ensinamentos dos profs, enfim , somamos todas essas linhas mais o numero dígitado  pelo usu
+        }
+        // concluindo
+        for (int i = 0; i < 3; i++) { // apresentando 
+            for (int j = 0; j < 4; j++) {
+                System.out.print(ma[i][j] + " ");
+            }
+            System.out.println();
+          }
+      }
+   }
