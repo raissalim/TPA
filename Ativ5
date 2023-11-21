@@ -2,81 +2,28 @@ import java.util.Scanner;
 public class Ativ5 {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
+		
+	
 			final int TAM = 10;
 			int a[] ;
-			int d=0;
+			int d=0; // d = Numero de divisores
 			a = new int [TAM];
 			
-			// Os numeros inteiros//
+			// 
 			System.out.println("Vector A");
 			for ( int i=0; i<TAM; i++) {
+				//Ler as variáveis
 				System.out.println("Apresente o "+(i+1)+" numero");
 				a[i] = ler.nextInt();
+				for (int j=TAM; j>0; j++) {
+					if (a[i]%j==0) { // Verificar se é divisivél
+					d = d+1; // Adicionar d
+					System.out.println("O numero de divisões do "+a[i]+" é:"+d); // Mostrar o quanto é divisivél
+					}
 				}
 			
-			
-			for (int i=a[0]; i>1; i--) {
-				if (a[0]%i==0) {
-				d = d+1;
 				}
-				}
-			System.out.println("O numero de divisões do "+a[0]+" é:"+d);
-			for (int i=a[1]; i>0; i--) {
-				if (a[1]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[1]+" é:"+d);
-			for (int i=a[2]; i>0; i--) {
-				if (a[2]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[2]+" é:"+d);
-			for (int i=a[3]; i>0; i--) {
-				if (a[3]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[3]+" é:"+d);
-			for (int i=a[4]; i>0; i--) {
-				if (a[4]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[4]+" é:"+d);
-			for (int i=a[5]; i>0; i--) {
-				if (a[5]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[5]+" é:"+d);
-			for (int i=a[6]; i>0; i--) {
-				if (a[6]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[6]+" é:"+d);
-			for (int i=a[7]; i>0; i--) {
-				if (a[7]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[7]+" é:"+d);
-			for (int i=a[8]; i>0; i--) {
-				if (a[8]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[8]+" é:"+d);
-			for (int i=a[9]; i>0; i--) {
-				if (a[9]%i==0) {
-				d = d+1;
-				}
-				}
-			System.out.println("O numero de divisões do "+a[9]+" é:"+d);
-			
-			
+
 			
 			ler.close();
 }
