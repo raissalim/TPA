@@ -9,7 +9,7 @@ public class Ativ5 {
 			int d=0; // d = Numero de divisores
 			a = new int [TAM];
 			
-			// 
+			// Vetor A
 			System.out.println("Vector A");
 			for ( int i=0; i<TAM; i++) {
 				//Ler as variáveis
@@ -24,7 +24,6 @@ public class Ativ5 {
 			
 				}
 
-			
 			ler.close();
 }
 }
