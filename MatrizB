@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class MatrizB {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[][] ma = new int[3][3];
+        
+        
+        System.out.println("Começando a nossa matriz:");// enchendo linguiça, ou aprofundando o usuario?
+        for (int i = 0; i < 3; i++) { // valores de coluna e linha 
+            for (int j = 0; j < 3; j++) {
+                System.out.print("Insira o valor para a posição [" + i + "][" + j + "]: ");
+                ma[i][j] = in.nextInt();
+                  }
+                }
+        
+        
+        // Encontrar o maior e o menor valor
+        int maior = ma[0][0];// zerado
+        int menor = ma[0][0];// zerado
+        int positionMaiormaI = 0, positionMaiormaJ = 0;
+        int positionMenormaI= 0, positionMenomaJ = 0;
+        
+        
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (ma[i][j] > maior) {
+                    maior = ma[i][j]; // puxando variavel de cima 
+                    positionMaiormaI = i; //localizando posiçao da linha
+                    positionMaiormaJ = j;// localizando posiçao coluna 
+                }
+                
+                
+                 else if  (ma[i][j] < menor) { // o contrario vamos comparar valores 
+                    menor = ma[i][j];
+                    positionMenormaI = i;// localizando
+                    positionMenomaJ = j;// mesma coisa
+                   }
+              }
+         }
+        
+        
+        System.out.println("O maior valor na matriz é " + maior + " e está na posição [" + positionMaiormaI + "][" + positionMaiormaJ + "]"); // concluindo
+        System.out.println("O menor valor na matriz é " + menor + " e está na posição [" + positionMenormaI + "][" + positionMenomaJ + "]");
+        in.close();
+        }
+ }
