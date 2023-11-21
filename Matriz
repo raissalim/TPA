@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class MatrizA {
+   public static void main(String[]args){
+       Scanner in=new Scanner(System.in);
+       int ma[][] = new int[4][4];
+       ma[0][0] = 2;
+       int multiplicaçao=2;// dobrando valor
+       
+       
+for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4; j++){
+        ma[i][j]=multiplicaçao;// ex 4 
+        multiplicaçao= multiplicaçao*2;// 4 = 4 *2
+    }
+}
+        for (int i = 0; i < 4; i++) { // apresentando 
+            for (int  j = 0; j < 4; j++) {
+                System.out.print(ma[i][j] + " ");
+           }
+        }
+      }
+}
+
+// temos uma pg uhull
