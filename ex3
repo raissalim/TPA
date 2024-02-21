@@ -8,17 +8,16 @@ public class ex3 {
 		int[] A = new int[TAM];
 		int[] b = new int[TAM];
 		int[] c = new int[TAM];
-		for (int i = 0; i < b.length; i++) {
-			System.out.println("Digite o numero "+n+1);
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("Digite um numero inteiro com 3 algarismos:");
 			A[i] = in.nextInt();
-			n+=+1;
+		      //	n+=+1;
 		}
 		for (int i = 0; i < b.length; i++) {
-			A[i]= n-=-1;
+			A[i]-=b[i];
 			
 			
-		} for (int i = 0; i < b.length; i++) {
-			c[i] = in.nextInt();
+		} for (int i = 0; i < c.length; i++) {
 			c[i] = b[i];
 			System.out.println("Seu numero invertido é: " +c[i]);
 
